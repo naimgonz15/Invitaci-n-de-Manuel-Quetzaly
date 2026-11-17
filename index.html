@@ -1,1113 +1,2597 @@
 <!DOCTYPE html>
+
 <html lang="es">
+
 <head>
+
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <meta name="theme-color" content="#f5efe6">
 
-<title>Manuel & Quetzaly | Nuestra boda</title>
+
+
+<title>Manuel &amp; Quetzaly | Nuestra boda</title>
+
 <meta name="description" content="Manuel y Quetzaly te invitan a celebrar el comienzo de su para siempre.">
 
+
+
 <meta property="og:type" content="website">
+
 <meta property="og:locale" content="es_MX">
+
 <meta property="og:title" content="Manuel &amp; Quetzaly | Nuestra boda">
+
 <meta property="og:description" content="Una historia, un amor, una vida juntos. Acompáñanos a celebrar nuestro gran día.">
+
 <meta property="og:url" content="https://naimgonz15.github.io/Invitaci-n-de-Manuel-Quetzaly/">
+
 <meta property="og:image" content="https://naimgonz15.github.io/Invitaci-n-de-Manuel-Quetzaly/1.jpeg">
+
 <meta property="og:image:secure_url" content="https://naimgonz15.github.io/Invitaci-n-de-Manuel-Quetzaly/1.jpeg">
+
 <meta property="og:image:alt" content="Manuel y Quetzaly">
+
 <meta property="og:image:width" content="1200">
+
 <meta property="og:image:height" content="630">
 
+
+
 <meta name="twitter:card" content="summary_large_image">
+
 <meta name="twitter:title" content="Manuel &amp; Quetzaly | Nuestra boda">
+
 <meta name="twitter:description" content="Acompáñanos a celebrar nuestro gran día.">
+
 <meta name="twitter:image" content="https://naimgonz15.github.io/Invitaci-n-de-Manuel-Quetzaly/1.jpeg">
 
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
 <style>
+
 :root {
+
   --ivory: #f8f5ef;
+
   --cream: #eee5d8;
+
   --gold: #b99a68;
+
   --gold-dark: #8e744d;
+
   --ink: #3e382f;
+
   --muted: #827665;
+
 }
+
+
 
 * { box-sizing: border-box; }
 
+
+
 html { scroll-behavior: smooth; }
 
+
+
 body {
+
   margin: 0;
+
   background: var(--ivory);
+
   color: var(--ink);
+
   font-family: "Montserrat", sans-serif;
+
   font-weight: 300;
+
 }
+
+
 
 button, a {
+
   -webkit-tap-highlight-color: transparent;
+
 }
+
+
 
 /* MÚSICA */
+
 .music-button {
+
   position: fixed;
+
   z-index: 20;
+
   top: 18px;
+
   right: 18px;
+
   width: 48px;
+
   height: 48px;
+
   border: 1px solid rgba(185,154,104,.75);
+
   border-radius: 50%;
+
   background: rgba(248,245,239,.92);
+
   color: var(--gold-dark);
+
   cursor: pointer;
+
   font-size: 19px;
+
   box-shadow: 0 5px 20px rgba(0,0,0,.08);
+
 }
+
+
 
 /* PORTADA */
+
 .hero {
+
   min-height: 100svh;
+
   position: relative;
+
   display: grid;
+
   place-items: center;
+
   text-align: center;
+
   padding: 70px 22px;
+
   color: white;
+
   overflow: hidden;
+
   background:
+
     linear-gradient(rgba(30,25,20,.30), rgba(30,25,20,.48)),
+
     url("1.jpeg") center 42% / cover no-repeat,
+
     #8b7b68;
+
 }
+
+
 
 .hero::after {
+
   content: "";
+
   position: absolute;
+
   inset: 18px;
+
   border: 1px solid rgba(255,255,255,.55);
+
   pointer-events: none;
+
 }
+
+
 
 .hero-content {
+
   position: relative;
+
   z-index: 1;
+
   max-width: 760px;
+
 }
+
+
 
 .monogram {
+
   width: 110px;
+
   height: 110px;
+
   border: 1px solid #c5a46d;
+
   border-radius: 50%;
+
   display: flex;
+
   align-items: center;
+
   justify-content: center;
+
   margin: 0 auto 35px;
+
   font-family: "Cormorant Garamond", serif;
+
   font-size: 35px;
+
   color: #c5a46d;
+
   letter-spacing: 2px;
+
 }
+
+
 
 .monogram .amp {
+
   font-size: 23px;
+
   margin: 0 3px;
+
 }
+
+
 
 .eyebrow {
+
   font-size: 10px;
+
   letter-spacing: 4px;
+
   text-transform: uppercase;
+
   margin: 0 0 17px;
+
 }
+
+
 
 h1, h2, h3, .script {
+
   font-family: "Cormorant Garamond", Georgia, serif;
+
   font-weight: 400;
+
 }
+
+
 
 h1 {
+
   font-size: clamp(52px, 10vw, 100px);
+
   line-height: .92;
+
   margin: 0;
+
 }
+
+
 
 .amp {
+
   color: #e2c99e;
+
   font-style: italic;
+
 }
+
+
 
 .hero-date {
+
   margin: 25px 0 30px;
+
   font-size: 12px;
+
   letter-spacing: 4px;
+
 }
+
+
 
 .outline-link {
+
   display: inline-block;
+
   color: white;
+
   border: 1px solid rgba(255,255,255,.8);
+
   padding: 14px 25px;
+
   text-decoration: none;
+
   text-transform: uppercase;
+
   letter-spacing: 2px;
+
   font-size: 9px;
+
   transition: .25s;
+
 }
+
+
 
 .outline-link:hover {
+
   background: white;
+
   color: var(--ink);
+
 }
+
+
 
 /* SECCIONES */
+
 section { padding: 85px 22px; }
 
+
+
 .section-inner {
+
   max-width: 900px;
+
   margin: auto;
+
   text-align: center;
+
 }
+
+
 
 .section-kicker {
+
   color: var(--gold-dark);
+
   letter-spacing: 3px;
+
   text-transform: uppercase;
+
   font-size: 9px;
+
   margin-bottom: 17px;
+
 }
+
+
 
 h2 {
+
   font-size: clamp(38px, 6vw, 58px);
+
   margin: 0 0 18px;
+
   color: #6e5a40;
+
 }
+
+
 
 .intro {
+
   max-width: 570px;
+
   margin: 0 auto;
+
   line-height: 2;
+
   color: var(--muted);
+
   font-size: 13px;
+
 }
+
+
 
 .ornament {
+
   color: var(--gold);
+
   font-size: 24px;
+
   margin: 25px 0;
+
 }
+
+
 
 /* NUESTRA HISTORIA */
+
 .story { background: var(--cream); }
 
+
+
 .photo-frame {
+
   max-width: 620px;
+
   margin: 38px auto 0;
+
   padding: 7px;
+
   border: 1px solid #d8c5a5;
+
   background: white;
+
 }
+
+
 
 .photo-frame img {
+
   width: 100%;
+
   display: block;
-  max-height: 520px;
+
+  max-height: 1020px;
+
   object-fit: cover;
+
 }
+
+
 
 /* GALERÍA */
+
 .gallery {
+
   background: var(--ivory);
+
   overflow: hidden;
+
 }
+
+
 
 .gallery-container {
+
   max-width: 1050px;
+
   margin: 40px auto 0;
+
   position: relative;
+
 }
 
+
+
 .gallery-track {
+
   display: flex;
+
   gap: 18px;
+
   overflow-x: auto;
+
   scroll-snap-type: x mandatory;
+
   scroll-behavior: smooth;
+
   scrollbar-width: none;
+
   padding: 12px 5px 25px;
+
   overscroll-behavior-x: contain;
+
 }
+
+
 
 .gallery-track::-webkit-scrollbar { display: none; }
 
+
+
 .gallery-slide {
+
   flex: 0 0 31%;
+
   scroll-snap-align: center;
+
   position: relative;
+
   overflow: hidden;
+
   border: 1px solid #d8c5a5;
+
   padding: 6px;
+
   background: white;
+
   box-shadow: 0 8px 25px rgba(80,60,35,.10);
+
 }
 
+
+
 .gallery-slide img {
+
   width: 100%;
+
   height: 390px;
+
   display: block;
+
   object-fit: cover;
+
   transition: transform .5s ease;
+
 }
+
+
 
 .gallery-slide:hover img { transform: scale(1.04); }
 
+
+
 .gallery-controls {
+
   display: flex;
+
   justify-content: center;
+
   align-items: center;
+
   gap: 22px;
+
   margin-top: 12px;
+
 }
+
+
 
 .gallery-arrow {
+
   width: 40px;
+
   height: 40px;
+
   border: 1px solid var(--gold);
+
   border-radius: 50%;
+
   background: transparent;
+
   color: var(--gold-dark);
+
   font-size: 22px;
+
   cursor: pointer;
+
 }
+
+
 
 .gallery-arrow:hover {
+
   background: var(--gold-dark);
+
   color: white;
+
 }
+
+
 
 .gallery-dots {
+
   display: flex;
+
   gap: 9px;
+
   align-items: center;
+
 }
+
+
 
 .gallery-dot {
+
   width: 7px;
+
   height: 7px;
+
   border-radius: 50%;
+
   border: none;
+
   background: #d8c9b3;
+
   padding: 0;
+
   cursor: pointer;
+
 }
+
+
 
 .gallery-dot.active {
+
   background: var(--gold-dark);
+
   transform: scale(1.35);
+
 }
+
+
 
 .gallery-caption {
+
   color: var(--muted);
+
   font-family: "Cormorant Garamond", serif;
+
   font-style: italic;
+
   font-size: 20px;
+
   margin-top: 18px;
+
 }
+
 .countdown {
+
   display: flex;
+
   justify-content: center;
+
   gap: 18px;
+
   margin: 30px auto;
+
   flex-wrap: wrap;
+
 }
+
+
 
 .countdown-item {
+
   display: flex;
+
   flex-direction: column;
+
   align-items: center;
+
   min-width: 65px;
+
 }
+
+
 
 .countdown-item span {
+
   font-family: 'Cormorant Garamond', serif;
+
   font-size: 38px;
+
   color: #b99a62;
+
   font-weight: 500;
+
 }
+
+
 
 .countdown-item small {
+
   font-family: 'Montserrat', sans-serif;
+
   font-size: 9px;
+
   letter-spacing: 2px;
+
   color: #8b806f;
+
 }
+
+
 
 @media (max-width: 480px) {
+
   .countdown {
+
     gap: 12px;
+
   }
+
+
 
   .countdown-item {
+
     min-width: 58px;
+
   }
+
+
 
   .countdown-item span {
+
     font-size: 32px;
+
   }
+
 }
+
+
 
 /* CEREMONIA Y RECEPCIÓN */
+
 .details { background: var(--ivory); }
 
+
+
 .detail-grid {
+
   display: grid;
+
   grid-template-columns: repeat(2, minmax(0,1fr));
+
   gap: 22px;
+
   margin-top: 38px;
+
 }
+
+
 
 .detail-card {
+
   border: 1px solid #dfd2bf;
+
   padding: 12px 12px 25px;
+
   background: rgba(255,255,255,.45);
+
 }
+
+
 
 .detail-card img {
+
   width: 100%;
+
   height: 230px;
+
   object-fit: cover;
+
   display: block;
+
   margin-bottom: 22px;
+
 }
+
+
 
 .detail-card h3 {
+
   font-size: 30px;
+
   color: #806b4c;
+
   margin: 0 0 12px;
+
 }
+
+
 
 .detail-card p {
+
   font-size: 12px;
+
   line-height: 1.9;
+
   color: var(--muted);
+
   margin: 7px 0;
+
 }
+
+
 
 .detail-time {
+
   color: var(--gold-dark) !important;
+
   font-weight: 500;
+
   font-size: 13px !important;
+
 }
 
+
+
 .map-button {
+
   display: inline-flex;
+
   justify-content: center;
+
   align-items: center;
+
   gap: 9px;
+
   margin-top: 17px;
+
   padding: 13px 18px;
+
   background: var(--gold-dark);
+
   color: white;
+
   text-decoration: none;
+
   font-size: 9px;
+
   letter-spacing: 1.5px;
+
   text-transform: uppercase;
+
   transition: .25s;
+
 }
+
+
 
 .map-button:hover { background: #6e593a; }
 
+
+
 /* VESTIMENTA */
+
 .dress-code {
+
   margin-top: 65px;
+
 }
+
+
 
 .dress-icons {
+
   display: flex;
+
   justify-content: center;
+
   gap: 45px;
+
   margin: 28px 0 20px;
+
 }
+
+
 
 .dress-item {
+
   display: flex;
+
   flex-direction: column;
+
   align-items: center;
+
   gap: 10px;
+
   color: var(--gold-dark);
+
   font-size: 12px;
+
 }
+
+
 
 .dress-icon {
+
   width: 76px;
+
   height: 76px;
+
   border: 1px solid #d8c5a5;
+
   border-radius: 50%;
+
   display: grid;
+
   place-items: center;
+
   background: #f4eee4;
+
   font-size: 32px;
+
 }
+
+
 
 /* REGALOS */
+
 .gifts { background: var(--cream); }
 
+
+
 .gifts-box {
+
   max-width: 680px;
+
   margin: 30px auto 0;
+
   padding: 32px 22px;
+
   border: 1px solid #d3c09e;
+
   background: rgba(255,255,255,.38);
+
 }
+
+
 
 .gifts-message {
+
   color: var(--muted);
+
   font-size: 13px;
+
   line-height: 2;
+
   margin: 0 auto 25px;
+
   max-width: 540px;
+
 }
+
+
 
 .bank-card {
+
   border: 1px solid #dfd2bf;
+
   background: rgba(255,255,255,.55);
+
   padding: 22px 15px;
+
   margin-top: 16px;
+
 }
+
+
 
 .bank-card h3 {
+
   color: #806b4c;
+
   font-size: 25px;
+
   margin: 0 0 10px;
+
 }
+
+
 
 .bank-card p {
+
   color: var(--muted);
+
   font-size: 12px;
+
   line-height: 1.8;
+
   overflow-wrap: anywhere;
+
   margin: 5px 0;
+
 }
+
+
 
 .account-number {
+
   font-size: 14px !important;
+
   letter-spacing: 1px;
+
   color: var(--ink) !important;
+
   font-weight: 500;
+
 }
+
+
 
 .copy-button {
+
   border: 1px solid var(--gold-dark);
+
   background: transparent;
+
   color: var(--gold-dark);
+
   padding: 11px 18px;
+
   margin-top: 12px;
+
   font-family: "Montserrat", sans-serif;
+
   font-size: 9px;
+
   letter-spacing: 1px;
+
   text-transform: uppercase;
+
   cursor: pointer;
+
 }
+
+
 
 .copy-button:hover {
+
   background: var(--gold-dark);
+
   color: white;
+
 }
+
+
 
 /* CONFIRMACIÓN */
+
 .rsvp { background: #eee5d8; }
 
+
+
 .rsvp-box {
+
   max-width: 600px;
+
   margin: 30px auto 0;
+
   padding: 35px 24px;
+
   border: 1px solid #cdb994;
+
   background: rgba(255,255,255,.35);
+
 }
+
+
 
 .button {
+
   display: inline-block;
+
   margin-top: 22px;
+
   padding: 15px 27px;
+
   background: var(--gold-dark);
+
   color: white;
+
   text-decoration: none;
+
   font-size: 9px;
+
   letter-spacing: 2px;
+
   text-transform: uppercase;
+
 }
+
 .btn-confirmar {
+
   display: inline-block;
+
   background: #b99a62;
+
   color: white;
+
   padding: 14px 25px;
+
   border-radius: 30px;
+
   text-decoration: none;
+
   font-family: 'Montserrat', sans-serif;
+
   font-size: 13px;
+
   letter-spacing: 1px;
+
   transition: 0.3s;
+
 }
+
+
 
 .btn-confirmar:hover {
+
   background: #967744;
+
   transform: translateY(-2px);
+
 }
+
+
 
 /* PIE DE PÁGINA */
+
 footer {
+
   padding: 45px 20px;
+
   text-align: center;
+
   background: #4a4035;
+
   color: #f8f2e8;
+
 }
+
+
 
 footer .script {
+
   font-size: 38px;
+
   margin: 0 0 8px;
+
 }
+
+
 
 footer p {
+
   font-size: 9px;
+
   letter-spacing: 2px;
+
 }
 
+
+
 /* CELULARES */
+
 @media (max-width: 700px) {
+
   section { padding: 68px 19px; }
+
+
 
   .detail-grid { grid-template-columns: 1fr; }
 
+
+
   .hero { background-position: center; }
+
+
 
   .gallery-slide { flex: 0 0 82%; }
 
+
+
   .gallery-slide img { height: 420px; }
+
+
 
   .gallery-track { gap: 13px; }
 
+
+
   .detail-card img { height: 220px; }
+
 }
+
+
 
 @media (max-width: 380px) {
+
   .gallery-slide img { height: 350px; }
+
   .music-button {
+
     width: 43px;
+
     height: 43px;
+
   }
+
   .dress-icons { gap: 25px; }
+
 }
 
+
+
 @media (prefers-reduced-motion: reduce) {
+
   html, .gallery-track { scroll-behavior: auto; }
+
   .gallery-slide img { transition: none; }
+
 }
+
+
+
+.calendar-container {
+
+  text-align: center;
+
+  margin: 28px auto 15px;
+
+  padding: 0 15px;
+
+}
+
+
+
+.calendar-button {
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 9px;
+
+  padding: 13px 25px;
+
+  background: #b69a62;
+
+  color: white;
+
+  text-decoration: none;
+
+  border-radius: 30px;
+
+  font-family: 'Montserrat', sans-serif;
+
+  font-size: 13px;
+
+  letter-spacing: 1px;
+
+  transition: 0.3s ease;
+
+}
+
+
+
+.calendar-button:hover {
+
+  background: #967b48;
+
+  transform: translateY(-2px);
+
+}
+
+
+
+.calendar-container p {
+
+  font-size: 11px;
+
+  color: #8b8174;
+
+  margin-top: 12px;
+
+  line-height: 1.6;
+
+}
+
+
+
+
+/* CUENTA REGRESIVA: MARFIL Y DETALLES DORADOS */
+.countdown-section {
+  position: relative; isolation: isolate; overflow: hidden;
+  max-width: 920px; margin: 18px auto 0; padding: 42px 24px 35px;
+  border: 1px solid rgba(185,154,104,.48); border-radius: 5px;
+  background:
+    radial-gradient(ellipse at 8% 12%, rgba(255,255,255,.92), transparent 34%),
+    radial-gradient(ellipse at 92% 88%, rgba(211,195,169,.22), transparent 38%),
+    repeating-linear-gradient(118deg, rgba(178,157,126,.025) 0 1px, transparent 1px 9px),
+    linear-gradient(135deg, #faf8f3, #f1ece3 52%, #fbf9f5);
+  box-shadow: 0 12px 35px rgba(82,67,48,.055);
+}
+.countdown-section::before, .countdown-section::after {
+  content: "❧"; position: absolute; z-index: -1; color: rgba(169,148,111,.24);
+  font-family: Georgia,serif; font-size: 78px; line-height: 1; pointer-events: none;
+}
+.countdown-section::before { top: 8px; left: 12px; transform: rotate(-24deg); }
+.countdown-section::after { right: 12px; bottom: 4px; transform: rotate(156deg); }
+.countdown-section .countdown { gap: 12px; margin: 27px auto 22px; }
+.countdown-item { min-width: 82px; padding: 10px 9px 9px; border: 1px solid rgba(185,154,104,.34); background: rgba(255,255,255,.56); }
+.countdown-item span { font-size: 39px; line-height: 1.1; }
+.countdown-item small { margin-top: 5px; font-size: 8px; letter-spacing: 1.5px; }
+.calendar-container { margin-top: 15px; }
+.calendar-button { box-shadow: 0 5px 15px rgba(142,116,77,.15); }
+
+/* FAMILIAS Y PADRINOS */
+.family-section { background: linear-gradient(180deg, #f8f5ef 0%, #f1ece3 100%); }
+.family-panel {
+  max-width: 790px; margin: 34px auto 0; padding: 32px 25px;
+  border: 1px solid #ddceb5; background: rgba(255,255,255,.48);
+  box-shadow: 0 9px 28px rgba(80,60,35,.045);
+}
+.family-heading {
+  margin: 0 0 8px; color: #806b4c;
+  font-family: "Cormorant Garamond",Georgia,serif; font-size: 30px; font-weight: 400;
+}
+.family-subtitle { margin: 0 0 23px; color: var(--muted); font-size: 11px; line-height: 1.8; }
+.parents-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 18px; }
+.parent-card, .sponsor-card {
+  padding: 20px 14px; border: 1px solid rgba(185,154,104,.34); background: rgba(250,248,243,.72);
+}
+.person-label {
+  display: block; margin-bottom: 9px; color: var(--gold-dark);
+  font-size: 9px; letter-spacing: 1.8px; text-transform: uppercase;
+}
+.parent-card p, .sponsor-card p {
+  margin: 5px 0; color: #6f6251;
+  font-family: "Cormorant Garamond",Georgia,serif; font-size: 21px; line-height: 1.35;
+}
+.family-divider { width: 54px; height: 1px; margin: 29px auto; background: #c9b38d; }
+.sponsors-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 14px; margin-top: 22px; }
+.sponsor-card { background: rgba(255,255,255,.52); }
+.sponsor-card p { font-size: 19px; }
+.family-quote {
+  max-width: 610px; margin: 0 auto; color: #78694f;
+  font-family: "Cormorant Garamond",Georgia,serif;
+  font-size: clamp(23px,4vw,31px); font-style: italic; line-height: 1.45;
+}
+.family-quote-mark { display: block; margin-bottom: 8px; color: #b99a68; font-size: 25px; }
+@media (max-width: 600px) {
+  .countdown-section { padding: 34px 13px 28px; margin-left: 2px; margin-right: 2px; }
+  .countdown-section::before, .countdown-section::after { font-size: 55px; }
+  .countdown-section .countdown { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); max-width: 245px; gap: 9px; }
+  .countdown-item { min-width: 0; padding: 9px 5px; }
+  .countdown-item span { font-size: 34px; }
+  .family-panel { padding: 27px 15px; }
+  .parents-grid, .sponsors-grid { grid-template-columns: 1fr; }
+}
+
+
+/* FONDOS SUAVES Y ALTERNADOS */
+#bienvenida {
+  background: linear-gradient(145deg, #fffefa 0%, #f8f4ec 58%, #f1e9dc 100%);
+}
+.story {
+  background: linear-gradient(145deg, #f0e8dc 0%, #eee5d8 58%, #e9dece 100%);
+}
+.family-section {
+  background: linear-gradient(145deg, #fffefa 0%, #faf6ef 58%, #f3ecdf 100%);
+}
+.gallery {
+  background: linear-gradient(145deg, #f8f5ef 0%, #fffdf9 100%);
+}
+.details {
+  background: linear-gradient(145deg, #f1e9dc 0%, #f8f5ef 100%);
+}
+.gifts {
+  background: linear-gradient(145deg, #eee5d8 0%, #e9dece 100%);
+}
+.rsvp {
+  background: linear-gradient(145deg, #fffdf9 0%, #f2e9dc 100%);
+}
+
+/* ACABADO DE FAMILIAS Y PADRINOS */
+.family-section .section-inner > h2 { margin-bottom: 0; }
+.family-panel { border-radius: 3px; }
+.parent-card, .sponsor-card {
+  border-radius: 2px;
+  box-shadow: 0 7px 20px rgba(83,65,42,.035);
+}
+.parent-card { padding: 25px 18px; }
+.sponsor-card { padding: 23px 16px; }
+.family-divider { opacity: .8; }
+
+@media (max-width: 600px) {
+  .family-panel { margin-top: 25px; padding: 27px 15px; }
+  .parents-grid, .sponsors-grid { grid-template-columns: 1fr; gap: 13px; }
+  .parent-card, .sponsor-card { padding: 22px 15px; }
+  .family-quote { font-size: 24px; }
+  .family-subtitle { padding: 0 5px; }
+}
+
+
+
+/* AJUSTE GENERAL DE MAQUETACIÓN */
+:root { color-scheme: light; }
+html, body { width: 100%; min-height: 100%; overflow-x: clip; }
+body { line-height: 1.6; }
+img { max-width: 100%; }
+main { width: 100%; overflow: hidden; }
+section { width: 100%; position: relative; }
+.section-inner { width: min(100%, 900px); }
+
+/* Separación y jerarquía consistente */
+#bienvenida, .story, .family-section, .gallery, .details, .gifts, .rsvp {
+  padding-block: clamp(58px, 7vw, 86px);
+}
+.section-kicker { line-height: 1.7; }
+h2 { line-height: 1.08; }
+.intro { padding-inline: 8px; }
+
+/* Cuenta regresiva */
+.countdown-section { width: 100%; }
+.countdown { align-items: stretch; }
+.countdown-item { flex: 0 1 105px; }
+.calendar-container { width: 100%; }
+.calendar-button { max-width: 100%; }
+
+/* Familias y padrinos */
+.family-panel { width: 100%; }
+.parents-grid, .sponsors-grid { width: 100%; }
+.parent-card, .sponsor-card { min-width: 0; overflow-wrap: anywhere; }
+
+/* Galería y detalles */
+.gallery-container { width: 100%; }
+.gallery-slide { min-width: 0; }
+.detail-grid { align-items: stretch; }
+.detail-card { min-width: 0; overflow: hidden; }
+.detail-card img { max-width: 100%; }
+
+/* Regalos y confirmación */
+.gifts-box, .rsvp-box { width: 100%; }
+.account-number { overflow-wrap: anywhere; }
+.btn-confirmar { max-width: 100%; line-height: 1.5; }
+
+@media (max-width: 700px) {
+  section { padding: 60px 16px; }
+  .hero { min-height: 100svh; padding: 70px 20px; }
+  .hero::after { inset: 10px; }
+  .hero-content { width: 100%; }
+  .monogram { width: 88px; height: 88px; margin-bottom: 26px; }
+  .eyebrow { letter-spacing: 2.5px; line-height: 1.8; }
+  h1 { font-size: clamp(48px, 13vw, 72px); }
+  h2 { font-size: clamp(34px, 9vw, 46px); }
+  .section-inner { width: 100%; }
+  .countdown-section { padding: 30px 12px 25px; margin: 24px auto; }
+  .countdown-section .countdown {
+    display: grid; grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: min(100%, 280px); gap: 10px; margin: 20px auto;
+  }
+  .countdown-item { width: auto; min-width: 0; flex: initial; }
+  .calendar-container { padding: 0 4px; }
+  .calendar-button { padding: 12px 17px; font-size: 11px; }
+  .family-panel { padding: 25px 14px; }
+  .parents-grid, .sponsors-grid { grid-template-columns: 1fr; gap: 12px; }
+  .parent-card, .sponsor-card { padding: 21px 15px; }
+  .family-quote { font-size: 24px; }
+  .detail-grid { grid-template-columns: 1fr; gap: 18px; }
+  .detail-card { padding: 10px 10px 22px; }
+  .detail-card img { height: 215px; }
+  .dress-code { margin-top: 45px; }
+  .dress-icons { gap: 22px; flex-wrap: wrap; }
+  .dress-icon { width: 66px; height: 66px; }
+  .gifts-box, .rsvp-box { padding: 25px 15px; }
+  .gallery-slide { flex: 0 0 84%; }
+  .gallery-slide img { height: min(115vw, 420px); }
+  footer { padding: 38px 16px; }
+}
+@media (max-width: 360px) {
+  section { padding-inline: 13px; }
+  .countdown-section { padding-inline: 9px; }
+  .countdown-item span { font-size: 30px; }
+  .gallery-slide { flex-basis: 90%; }
+  .dress-icons { gap: 14px; }
+  .btn-confirmar { padding: 12px 15px; font-size: 11px; }
+}
+
 </style>
+
 </head>
+
+
 
 <body>
 
+
+
 <!-- MÚSICA -->
+
 <audio id="weddingMusic" loop preload="none">
-  <source src="Risk It All.mp4" type="audio/mpeg">
+
+  <source src="Risk It All.mp4" type="audio/mp4">
+
 </audio>
 
+
+
 <button class="music-button" id="musicToggle"
+
   aria-label="Reproducir música" title="Activar música">♫</button>
 
+
+
 <!-- PORTADA -->
+
 <header class="hero" id="inicio">
+
   <div class="hero-content">
 
+
+
     <div class="monogram">
-      M<span class="amp">&</span>Q
+
+      M<span class="amp">&amp;</span>Q
+
     </div>
+
+
 
     <p class="eyebrow">Con la bendición de nuestras familias</p>
 
-    <h1>Manuel <span class="amp">&</span><br>Quetzaly</h1>
 
-    <p class="hero-date">14 · MARZO · 2026</p>
+
+    <h1>Manuel <span class="amp">&amp;</span><br>Quetzaly</h1>
+
+
+
+    <p class="hero-date">30 · ENERO · 2027</p>
+
+
 
     <a class="outline-link" href="#bienvenida">
+
       Abrir invitación
+
     </a>
 
+
+
   </div>
+
 </header>
+
+
 
 <main>
 
+
+
 <!-- BIENVENIDA -->
+
 <section id="bienvenida">
+
   <div class="section-inner">
+
     <p class="section-kicker">Un día para recordar</p>
+
     <h2>El comienzo de nuestro para siempre</h2>
 
-    <div class="countdown">
+
+
+    <div class="countdown-section">
+      <div class="countdown">
+
   <div class="countdown-item">
+
     <span id="days">00</span>
+
     <small>DÍAS</small>
+
   </div>
 
+
+
   <div class="countdown-item">
+
     <span id="hours">00</span>
+
     <small>HORAS</small>
+
   </div>
 
+
+
   <div class="countdown-item">
+
     <span id="minutes">00</span>
+
     <small>MINUTOS</small>
+
   </div>
 
+
+
   <div class="countdown-item">
+
     <span id="seconds">00</span>
+
     <small>SEGUNDOS</small>
+
   </div>
+
 </div>
 
-    <div class="ornament">✧</div>
-    
+
+
+
+
+<div class="calendar-container">
+
+  <a
+
+    href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Boda%20de%20Manuel%20y%20Quetzaly&amp;dates=20270130T230000Z%2F20270131T050000Z&amp;details=Nos%20encantar%C3%ADa%20compartir%20contigo%20este%20d%C3%ADa%20tan%20especial.%20Ceremonia%20a%20las%205%3A00%20p.m.%20y%20recepci%C3%B3n%20a%20las%206%3A30%20p.m.&amp;location=Parroquia%20de%20Nuestra%20Se%C3%B1ora%20de%20Guadalupe"
+
+    target="_blank"
+
+    rel="noopener noreferrer"
+
+    class="calendar-button">
+
+    <span>＋</span> Agregar al calendario
+
+  </a>
+
+
+
+  <p>
+
+    Guarda nuestra fecha y acompáñanos en este día especial.
+
+  </p>
+
+</div>
+
+
+
+    </div><!-- cierre countdown-section -->
+
+      <div class="ornament">✧</div>
+
+
 
     <p class="intro">
+
       Hay momentos que se vuelven eternos y personas que hacen que la vida
+
       sea extraordinaria. Hoy queremos celebrar nuestra historia y nos
+
       haría inmensamente felices compartir este día contigo.
+
     </p>
+
   </div>
+
 </section>
 
+
+
 <!-- NUESTRA HISTORIA -->
+
 <section class="story">
+
   <div class="section-inner">
+
     <p class="section-kicker">Nuestra historia</p>
+
     <h2>Dos almas, un mismo camino</h2>
 
+
+
     <p class="intro">
+
       Con amor, ilusión y el corazón lleno de alegría, estamos por comenzar
+
       una nueva etapa. Gracias por acompañarnos en este capítulo tan especial.
+
     </p>
 
+
+
     <div class="photo-frame">
-      <img src="1.jpeg" alt="Fotografía de Manuel y Quetzaly" loading="lazy">
+
+      <img src="11.jpeg" alt="Fotografía de Manuel y Quetzaly" loading="lazy">
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- UNIÓN DE FAMILIAS Y PADRINOS -->
+<section class="family-section" id="familias">
+  <div class="section-inner">
+    <p class="section-kicker">El amor une nuestras familias</p>
+    <h2>Un mismo camino</h2>
+
+    <div class="family-panel">
+      <p class="family-quote">
+        <span class="family-quote-mark" aria-hidden="true">“</span>
+        Dos historias, dos familias y un solo amor que hoy se convierte en un
+        hermoso comienzo para toda la vida.
+      </p>
+
+      <div class="family-divider" aria-hidden="true"></div>
+      <p class="section-kicker">Con la bendición de nuestros padres</p>
+      <h3 class="family-heading">Nuestras familias</h3>
+      <p class="family-subtitle">Con gratitud y cariño, reconocemos a quienes nos han acompañado en este camino.</p>
+
+      <div class="parents-grid">
+        <article class="parent-card">
+          <span class="person-label">Padres de Manuel</span>
+          <p>[Nombre del papá de Manuel]</p>
+          <p>[Nombre de la mamá de Manuel]</p>
+        </article>
+        <article class="parent-card">
+          <span class="person-label">Padres de Quetzaly</span>
+          <p>[Nombre del papá de Quetzaly]</p>
+          <p>[Nombre de la mamá de Quetzaly]</p>
+        </article>
+      </div>
+
+      <div class="family-divider" aria-hidden="true"></div>
+      <p class="section-kicker">Con cariño y agradecimiento</p>
+      <h3 class="family-heading">Nuestros padrinos</h3>
+      <p class="family-subtitle">Gracias por aceptar acompañarnos y ser parte de este momento tan especial.</p>
+
+      <div class="sponsors-grid">
+        <article class="sponsor-card">
+          <span class="person-label">Padrinos de velación</span>
+          <p>[Nombre de los padrinos]</p>
+        </article>
+        <article class="sponsor-card">
+          <span class="person-label">Padrinos de anillos</span>
+          <p>[Nombre de los padrinos]</p>
+        </article>
+        <article class="sponsor-card">
+          <span class="person-label">Padrinos de arras</span>
+          <p>[Nombre de los padrinos]</p>
+        </article>
+        <article class="sponsor-card">
+          <span class="person-label">Padrinos de lazo</span>
+          <p>[Nombre de los padrinos]</p>
+        </article>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- GALERÍA -->
+
 <section class="gallery" id="galeria">
+
   <div class="section-inner">
+
     <p class="section-kicker">Nuestros recuerdos</p>
+
     <h2>Momentos juntos</h2>
 
+
+
     <p class="intro">
+
       Cada fotografía guarda un instante de nuestra historia.
+
       Aquí compartimos algunos de nuestros recuerdos favoritos.
+
     </p>
+
+
 
     <div class="gallery-container">
+
       <div class="gallery-track" id="galleryTrack">
 
-        <div class="gallery-slide">
-          <img src="6.jpeg" alt="Manuel y Quetzaly, fotografía 1" loading="lazy">
-        </div>
+
 
         <div class="gallery-slide">
-          <img src="2.jpeg" alt="Manuel y Quetzaly, fotografía 2" loading="lazy">
+
+          <img src="2.jpeg" alt="Manuel y Quetzaly, fotografía 1" loading="lazy">
+
         </div>
 
-        <div class="gallery-slide">
-          <img src="3.jpeg" alt="Manuel y Quetzaly, fotografía 3" loading="lazy">
-        </div>
+
 
         <div class="gallery-slide">
-          <img src="4.jpeg" alt="Manuel y Quetzaly, fotografía 4" loading="lazy">
+
+          <img src="3.jpeg" alt="Manuel y Quetzaly, fotografía 2" loading="lazy">
+
         </div>
 
-        <div class="gallery-slide">
-          <img src="5.jpeg" alt="Manuel y Quetzaly, fotografía 5" loading="lazy">
-        </div>
+
 
         <div class="gallery-slide">
-          <img src="3.jpeg" alt="Manuel y Quetzaly, fotografía 6" loading="lazy">
+
+          <img src="4.jpeg" alt="Manuel y Quetzaly, fotografía 3" loading="lazy">
+
         </div>
 
+
+
         <div class="gallery-slide">
-          <img src="7.jpeg" alt="Manuel y Quetzaly, fotografía 7" loading="lazy">
+
+          <img src="5.jpeg" alt="Manuel y Quetzaly, fotografía 4" loading="lazy">
+
         </div>
+
+
+
+        <div class="gallery-slide">
+
+          <img src="6.jpeg" alt="Manuel y Quetzaly, fotografía 5" loading="lazy">
+
+        </div>
+
+
+
+        <div class="gallery-slide">
+
+          <img src="7.jpeg" alt="Manuel y Quetzaly, fotografía 6" loading="lazy">
+
+        </div>
+
+
+
+        <div class="gallery-slide">
+
+          <img src="8.jpeg" alt="Manuel y Quetzaly, fotografía 7" loading="lazy">
+
+        </div>
+        <div class="gallery-slide">
+
+          <img src="9.jpeg" alt="Manuel y Quetzaly, fotografía 8" loading="lazy">
+
+        </div>
+         <div class="gallery-slide">
+
+          <img src="10.jpeg" alt="Manuel y Quetzaly, fotografía 9" loading="lazy">
+
+        </div>
+
+
+
 
       </div>
+
+
 
       <div class="gallery-controls">
+
         <button class="gallery-arrow" id="galleryPrev" aria-label="Fotografía anterior">‹</button>
+
         <div class="gallery-dots" id="galleryDots"></div>
+
         <button class="gallery-arrow" id="galleryNext" aria-label="Fotografía siguiente">›</button>
+
       </div>
 
+
+
       <p class="gallery-caption">
+
         Siete recuerdos, una historia y un para siempre.
+
       </p>
+
     </div>
+
   </div>
+
 </section>
 
+
+
 <!-- DETALLES DE LA BODA -->
+
 <section class="details" id="detalles">
+
   <div class="section-inner">
 
+
+
     <p class="section-kicker">Celebra con nosotros</p>
+
     <h2>Nuestro gran día</h2>
 
+
+
     <p class="intro">
+
       Será un honor contar con tu presencia.
+
     </p>
+
+
 
     <div class="detail-grid">
 
+
+
       <!-- CEREMONIA -->
+
       <article class="detail-card">
+
         <img src="Ceremonia.jpg"
+
           alt="Fotografía de referencia de la ceremonia"
+
           loading="lazy">
+
+
 
         <h3>Ceremonia religiosa</h3>
 
+
+
         <p><strong>Parroquia de Nuestra Señora de Guadalupe</strong></p>
+
+
 
         <p class="detail-time">◷ 5:00 p. m.</p>
 
+
+
         <p>Nos encantará compartir contigo este momento tan especial.</p>
 
+
+
         <a class="map-button"
+
           href="https://maps.app.goo.gl/MGw8yyhrQeQTztws6?g_st=aw"
+
           target="_blank" rel="noopener noreferrer">
+
           <span>⌖</span> Ver ubicación en Maps
+
         </a>
+
       </article>
 
+
+
       <!-- RECEPCIÓN -->
+
       <article class="detail-card">
+
         <img src="Salon.jpeg"
+
           alt="Fotografía de referencia de Jardín Diamante"
+
           loading="lazy">
+
+
 
         <h3>Recepción</h3>
 
+
+
         <p><strong>Jardín Diamante</strong></p>
+
+
 
         <p class="detail-time">◷ 6:30 p. m.</p>
 
+
+
         <p>
+
           Referencia: en la gasolinera G500, hacia adentro,
+
           pasando la puerta de rejas.
+
         </p>
 
+
+
         <a class="map-button"
+
           href="https://maps.app.goo.gl/QDxyRf6jmie2ndmJ8?g_st=aw"
+
           target="_blank" rel="noopener noreferrer">
+
           <span>⌖</span> Ver ubicación en Maps
+
         </a>
+
       </article>
+
+
 
     </div>
 
+
+
     <!-- CÓDIGO DE VESTIMENTA -->
+
     <div class="dress-code">
+
       <div class="ornament">✧</div>
 
+
+
       <p class="section-kicker">Código de vestimenta</p>
+
       <h2 style="font-size:38px">Formal</h2>
+
+
 
       <div class="dress-icons">
 
-        <div class="dress-item">
-          <div class="dress-icon" aria-hidden="true">👗</div>
-          <span>Vestimenta formal</span>
-        </div>
+
 
         <div class="dress-item">
-          <div class="dress-icon" aria-hidden="true">🤵</div>
+
+          <div class="dress-icon" aria-hidden="true">👗</div>
+
           <span>Vestimenta formal</span>
+
         </div>
+
+
+
+        <div class="dress-item">
+
+          <div class="dress-icon" aria-hidden="true">🤵</div>
+
+          <span>Vestimenta formal</span>
+
+        </div>
+
+
 
       </div>
 
+
+
       <p class="intro">
+
         Agradecemos acompañarnos con vestimenta formal.
+
       </p>
+
     </div>
 
+
+
   </div>
+
 </section>
 
+
+
 <!-- REGALOS -->
+
 <section class="gifts" id="regalos">
+
   <div class="section-inner">
 
+
+
     <p class="section-kicker">Un detalle de corazón</p>
+
     <h2>Mesa de regalos</h2>
+
+
 
     <div class="ornament">✧</div>
 
+
+
     <div class="gifts-box">
 
+
+
       <p class="gifts-message">
+
         El mayor regalo es su compañía y compartir con nosotros este día
+
         tan importante. Si gustan consentirnos con un presente,
+
         agradeceríamos que fuera en efectivo, ya que nos ayudará a empezar
+
         esta nueva gran etapa.
+
       </p>
+
+
 
       <!-- CUENTA BBVA -->
+
       <div class="bank-card">
+
         <h3>Juan Manuel Carranza García</h3>
+
         <p>BBVA</p>
+
         <p class="account-number" id="accountBBVA">
+
           012180015017500056
+
         </p>
 
+
+
         <button class="copy-button"
+
           onclick="copyAccount('accountBBVA', this)">
+
           Copiar cuenta
+
         </button>
+
       </div>
+
+
 
       <!-- CUENTA MERCADO PAGO -->
+
       <div class="bank-card">
+
         <h3>Guadalupe Quetzali Rivera Benítez</h3>
+
         <p>Mercado Pago</p>
+
         <p class="account-number" id="accountMP">
+
           722969010993379435
+
         </p>
 
+
+
         <button class="copy-button"
+
           onclick="copyAccount('accountMP', this)">
+
           Copiar cuenta
+
         </button>
+
       </div>
 
+
+
       <p class="intro" style="margin-top:22px;font-size:11px;">
+
         Gracias por formar parte de nuestra historia.
+
       </p>
 
+
+
     </div>
+
   </div>
+
 </section>
+
+
+
+
 
 <!-- CONFIRMACIÓN -->
+
 <section class="rsvp" id="confirmar">
+
   <div class="section-inner">
 
+
+
     <p class="section-kicker">Tu presencia es nuestro mejor regalo</p>
+
     <h2>¿Nos acompañas?</h2>
 
+
+
     <p class="intro">
+
       Hemos reservado un lugar especial para ti. Confirma tu asistencia
+
       mediante el enlace de tu invitación familiar.
+
     </p>
 
+
+
     <div class="rsvp-box">
+
       <p class="intro">
+
         Para confirmar tus lugares, utiliza el botón que te compartimos
+
         en tu invitación personalizada.
+
       </p>
 
+
+
       <!-- COLOCAR AQUÍ EL ENLACE REAL DE CONFIRMACIÓN -->
-       <a 
+
+       <a
+
   href="https://wa.me/525584594863?text=Hola%2C%20Manuel%20y%20Quetzaly.%20Queremos%20confirmar%20nuestra%20asistencia%20a%20su%20boda.%20Asistiremos%20___%20personas."
+
   target="_blank"
+
   class="btn-confirmar">
+
   Confirmar asistencia por WhatsApp
+
     </a>
+
     </div>
-    
+
+
 
   </div>
+
 </section>
+
+
 
 </main>
 
+
+
 <!-- PIE DE PÁGINA -->
+
 <footer>
-  <p class="script">Manuel <span class="amp">&</span> Quetzaly</p>
+
+  <p class="script">Manuel <span class="amp">&amp;</span> Quetzaly</p>
+
   <p>30 · ENERO · 2027</p>
+
   <p>CON AMOR, PARA SIEMPRE</p>
+
 </footer>
+
+
 
 <script>
 
+
+
 /* CONTROL DE MÚSICA */
+
 const music = document.getElementById("weddingMusic");
+
 const musicToggle = document.getElementById("musicToggle");
+
 let isPlaying = false;
 
+
+
 musicToggle.addEventListener("click", async () => {
+
   try {
+
     if (!isPlaying) {
+
       await music.play();
+
       isPlaying = true;
+
       musicToggle.textContent = "Ⅱ";
+
       musicToggle.setAttribute("aria-label", "Pausar música");
+
       musicToggle.title = "Pausar música";
+
     } else {
+
       music.pause();
+
       isPlaying = false;
+
       musicToggle.textContent = "♫";
+
       musicToggle.setAttribute("aria-label", "Reproducir música");
+
       musicToggle.title = "Activar música";
+
     }
+
   } catch (error) {
-    alert("No se pudo reproducir la canción. Revisa que el archivo cancion.mp3 esté en la misma carpeta que este HTML.");
+
+    alert("No se pudo reproducir la canción. Revisa que el archivo Risk It All.mp4 esté en la misma carpeta que este HTML.");
+
   }
+
 });
 
+
+
 /* CARRUSEL */
+
 const galleryTrack = document.getElementById("galleryTrack");
+
 const gallerySlides = [...document.querySelectorAll(".gallery-slide")];
+
 const galleryDots = document.getElementById("galleryDots");
+
 let currentPhoto = 0;
 
+
+
 /* Crear indicadores */
+
 gallerySlides.forEach((slide, index) => {
+
   const dot = document.createElement("button");
 
+
+
   dot.className = "gallery-dot" + (index === 0 ? " active" : "");
+
   dot.setAttribute("aria-label", "Ver fotografía " + (index + 1));
+
+
 
   dot.addEventListener("click", () => showPhoto(index));
 
+
+
   galleryDots.appendChild(dot);
+
 });
 
+
+
 /* Mostrar fotografía */
+
 function showPhoto(index) {
+
   currentPhoto = (index + gallerySlides.length) % gallerySlides.length;
+
+
 
   const slide = gallerySlides[currentPhoto];
 
+
+
   galleryTrack.scrollTo({
+
     left:
+
       slide.offsetLeft -
+
       galleryTrack.offsetLeft -
+
       (galleryTrack.clientWidth - slide.clientWidth) / 2,
+
     behavior: "smooth"
+
   });
+
+
 
   updateDots();
+
 }
+
+
 
 /* Actualizar indicadores */
+
 function updateDots() {
+
   [...galleryDots.children].forEach((dot, index) => {
+
     dot.classList.toggle("active", index === currentPhoto);
+
   });
+
 }
 
+
+
 /* Botón anterior */
+
 document.getElementById("galleryPrev").addEventListener("click", () => {
+
   showPhoto(currentPhoto - 1);
+
 });
+
+
 
 /* Botón siguiente */
+
 document.getElementById("galleryNext").addEventListener("click", () => {
+
   showPhoto(currentPhoto + 1);
+
 });
+
+
 
 /* Detectar deslizamiento manual */
+
 let scrollTimeout;
 
+
+
 galleryTrack.addEventListener("scroll", () => {
+
   clearTimeout(scrollTimeout);
 
+
+
   scrollTimeout = setTimeout(() => {
+
     const center =
+
       galleryTrack.getBoundingClientRect().left +
+
       galleryTrack.clientWidth / 2;
 
+
+
     let closest = 0;
+
     let distance = Infinity;
 
+
+
     gallerySlides.forEach((slide, index) => {
+
       const rect = slide.getBoundingClientRect();
+
       const slideCenter = rect.left + rect.width / 2;
+
       const difference = Math.abs(center - slideCenter);
 
+
+
       if (difference < distance) {
+
         distance = difference;
+
         closest = index;
+
       }
+
     });
 
+
+
     currentPhoto = closest;
+
     updateDots();
+
   }, 80);
+
 });
 
+
+
 /* COPIAR CUENTAS BANCARIAS */
+
 async function copyAccount(elementId, button) {
+
   const account = document.getElementById(elementId).textContent.trim();
 
+
+
   try {
+
     await navigator.clipboard.writeText(account);
 
+
+
     const originalText = button.textContent;
+
     button.textContent = "¡Cuenta copiada!";
 
+
+
     setTimeout(() => {
+
       button.textContent = originalText;
+
     }, 2200);
 
+
+
   } catch (error) {
+
     const temp = document.createElement("textarea");
+
     temp.value = account;
+
     document.body.appendChild(temp);
+
     temp.select();
 
+
+
     try {
+
       document.execCommand("copy");
+
       button.textContent = "¡Cuenta copiada!";
+
     } catch (copyError) {
+
       button.textContent = "Copia manualmente";
+
     }
+
+
 
     document.body.removeChild(temp);
 
+
+
     setTimeout(() => {
+
       button.textContent = "Copiar cuenta";
+
     }, 2200);
+
   }
+
 }
 
+
+
 </script>
+
 <script>
+
 function actualizarCuentaRegresiva() {
+
   const fechaBoda = new Date(2027, 0, 30, 17, 0, 0).getTime();
+
   const ahora = new Date().getTime();
+
+
 
   const diferencia = fechaBoda - ahora;
 
+
+
   if (diferencia <= 0) {
+
     document.querySelector(".countdown").innerHTML =
+
       "<p>¡Hoy comienza nuestro para siempre! ♡</p>";
+
     return;
+
   }
 
+
+
   const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+
   const horas = Math.floor((diferencia / (1000 * 60 * 60)) % 24);
+
   const minutos = Math.floor((diferencia / (1000 * 60)) % 60);
+
   const segundos = Math.floor((diferencia / 1000) % 60);
 
+
+
   document.getElementById("days").textContent = String(dias).padStart(2, "0");
+
   document.getElementById("hours").textContent = String(horas).padStart(2, "0");
+
   document.getElementById("minutes").textContent = String(minutos).padStart(2, "0");
+
   document.getElementById("seconds").textContent = String(segundos).padStart(2, "0");
+
 }
 
+
+
 actualizarCuentaRegresiva();
+
 setInterval(actualizarCuentaRegresiva, 1000);
+
 </script>
+
 </body>
+
 </html>
