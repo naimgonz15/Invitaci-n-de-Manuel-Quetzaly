@@ -1457,13 +1457,22 @@ h2 { line-height: 1.08; }
   .dress-icons { gap: 14px; }
   .btn-confirmar { padding: 12px 15px; font-size: 11px; }
 }
-  * Distribución equilibrada para los cinco tipos de padrinos */
+/* DISTRIBUCIÓN EQUILIBRADA DE LOS CINCO TIPOS DE PADRINOS */
 .sponsors-grid {
+  display: grid;
   grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 14px;
+  align-items: stretch;
 }
 .sponsors-grid .sponsor-card {
   grid-column: span 2;
+  min-width: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
+/* Tres tarjetas arriba y dos centradas en la segunda fila */
 .sponsors-grid .sponsor-card:nth-child(4) {
   grid-column: 2 / span 2;
 }
@@ -1471,12 +1480,16 @@ h2 { line-height: 1.08; }
   grid-column: 4 / span 2;
 }
 @media (max-width: 700px) {
-  .sponsors-grid { grid-template-columns: 1fr; }
+  .sponsors-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
+  }
   .sponsors-grid .sponsor-card,
   .sponsors-grid .sponsor-card:nth-child(4),
-.sponsors-grid .sponsor-card:nth-child(5) {
-  grid-column: 4 / span 2;
-}}
+  .sponsors-grid .sponsor-card:nth-child(5) {
+    grid-column: 1;
+  }
+}
 
 </style>
 
